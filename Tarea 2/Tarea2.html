@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo de Sitio Web</title>
+    <!-- Estilos personalizados (opcional) -->
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 flex flex-col text-blue-500 font-mono">
+    <header class="
+      bg-blue-500 
+      w-full 
+      flex 
+      justify-center 
+      flex-col 
+      items-center 
+      text-white
+      h-40
+      text-lg
+      ">
+        <h1 class="text-4xl font-bold">Bienvenidos a Nuestro Sitio</h1>
+        <p>Un sitio web de ejemplo para replicar</p>
+    </header>
+    <nav class="
+      bg-black 
+      text-white
+      ">
+        <ul class="
+         nav-list 
+         flex
+         flex-row
+         justify-center 
+         items-center
+         gap-10
+         h-10
+         ">
+            <li class="hover:text-gray-400"><a href="#seccion1">Inicio</a></li>
+            <li class="hover:text-gray-400"><a href="#seccion2">Galería</a></li>
+            <li class="hover:text-gray-400"><a href="#seccion3">Servicios</a></li>
+            <li class="hover:text-gray-400"><a href="#seccion4">Testimonios</a></li>
+            <li class="hover:text-gray-400"><a href="#seccion5">Contacto</a></li>
+        </ul>
+    </nav>
+    <main class="flex justify-center flex-col items-center">
+        <section class="seccion1 my-20 flex flex-col justify-center items-center" >
+            <h2 class="text-7xl "style="text-shadow: 2px 2px 4px rgba(44, 113, 141, 0.5);">Sobre Nosotros</h2>
+            <p class="mx-96 text-gray-800">Somos una empresa comprometida con ofrecer servicios de alta calidad en el área de tecnología. Nuestro equipo está formado por expertos en diversas disciplinas que trabajan en conjunto para brindar las mejores soluciones a nuestros clientes.</p>
+        </section>
+        <section class="seccion2 flex flex-col mb-20">
+            <h2 class="text-7xl flex justify-center items-center mb-5" style="text-shadow: 2px 2px 4px rgba(44, 113, 141, 0.5);">Galería</h2>
+            <div class="flex flex-row gap-28">
+                <img src="https://via.placeholder.com/300x200" alt="Imagen 1" class="shadow-lg rounded-md ">
+                <img src="https://via.placeholder.com/300x200" alt="Imagen 2" class="shadow-lg rounded-md ">
+                <img src="https://via.placeholder.com/300x200" alt="Imagen 3" class="shadow-lg rounded-md ">
+            </div>
+        </section>
+        <section class="seccion3 flex flex-col justify-center items-center ">
+            <h2 class="text-7xl " style="text-shadow: 2px 2px 4px rgba(44, 113, 141, 0.5);">Nuestros Servicios</h2>
+            <div class="flex flex-row gap-10 mx-96 mt-5 mb-20">
+                <div class="container shadow-lg p-4 border-2 border-blue-700 rounded-md hover:bg-gray-200 bg-white hover:border-gray-400">
+                    <h3 class="text-lg">Desarrollo Web</h3>
+                    <p class="text-gray-800">Ofrecemos soluciones de desarrollo web a medida para satisfacer las necesidades específicas de cada cliente.</p>
+                </div>
+                <div class="container shadow-lg p-4 border-2 border-blue-500 rounded-md  hover:bg-gray-200 bg-white hover:border-gray-400">
+                    <h3 class="text-lg">Consultoría en TI</h3>
+                    <p class="text-gray-800">Brindamos consultoría estratégica en tecnología de la información para ayudar a las empresas a alcanzar sus objetivos.</p>
+                </div>
+            </div>
+        </section>
+        <section class="seccion4 flex flex-col justify-center items-center ">
+            <h2 class="text-7xl " style="text-shadow: 2px 2px 4px rgba(44, 113, 141, 0.5);">Testimonios</h2>
+            <div class="flex flex-row justify-center items-center gap-10 mx-96 mt-5 mb-20">
+                <div class="container shadow-lg p-4 border-2 border-blue-700 rounded-md hover:bg-gray-200 bg-white hover:border-gray-400">
+                    <blockquote>
+                        <p>“La mejor experiencia que hemos tenido con una empresa de tecnología. Altamente recomendados.”</p>
+                        <footer>Juan Pérez, CEO de Empresa X</footer>
+                    </blockquote>
+                </div>
+                <div class="container shadow-lg p-4 border-2 border-blue-700 rounded-md hover:bg-gray-200 bg-white hover:border-gray-400">
+                    <blockquote>
+                        <p>“Su equipo es muy profesional y entregan resultados de alta calidad en poco tiempo.”</p>
+                        <footer>María Gómez, Directora de Proyectos en Empresa Y</footer>
+                    </blockquote>
+                </div>
+            </div>
+        </section>    
+        <section class="seccion5">
+            <h2>Contáctanos</h2>
+            <form>
+                <div>
+                    <label for="nombre">Nombre</label>
+                    <input type="text" id="nombre" placeholder="Ingresa tu nombre">
+                </div>
+                <div>
+                    <label for="email">Email</label>
+                    <input type="email" id="email" placeholder="Ingresa tu email">
+                </div>
+                <div>
+                    <label for="mensaje">Mensaje</label>
+                    <textarea id="mensaje" rows="3" placeholder="Escribe tu mensaje"></textarea>
+                </div>
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Ejemplo de Sitio Web. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
